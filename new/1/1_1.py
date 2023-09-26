@@ -24,7 +24,7 @@ def getSquareByParams(figure, params):
             'square': square
         }
     elif(figure == "rectangle"):
-        if isnumber(params["basis"]) and isnumber(params["height"]):
+        if isnumber(params["a"]) and isnumber(params["b"]):
             a = float(params["a"])
             b = float(params["b"])
             if a != 0 and b != 0:

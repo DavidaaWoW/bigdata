@@ -135,8 +135,7 @@ def generateLineDiagramMatplotlib(data, x, y):
     plt.title('Линейная диаграмма зависимости ' + y + ' от ' + x, fontsize=20)
     plt.xticks(rotation=45, ha='right', fontsize=14)
     plt.yticks(fontsize=14)
-    plt.grid(axis='y', linestyle='--', linewidth=0.7, color='ivory')
-    
+    plt.grid(axis='both', linewidth=2, visible=True, color='mistyrose')
     plt.tight_layout()
     plt.show()
 
@@ -185,7 +184,7 @@ def init():
                 y = 'CPI'
             elif(y == '6'):
                 y = 'Unemployment'
-            print('Введите библиотеку для генерации диаграммы \n 1. Pyplot \n 2. MatPlotLib')
+            print('Введите библиотеку для генерации диаграммы \n 1. Plotly \n 2. MatPlotLib')
             lib = input()
             if(lib != '1' and lib != '2'):
                 print('Неправильно введены данные')
